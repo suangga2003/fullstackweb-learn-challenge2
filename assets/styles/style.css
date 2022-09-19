@@ -42,6 +42,9 @@ nav ul li:last-child a {
 nav ul li:last-child a:hover {
   background: #668cff;
 }
+nav .icon-menu {
+  display: none;
+}
 .hero {
   display: flex;
   padding-top: 36px;
@@ -333,5 +336,27 @@ nav ul li:last-child a:hover {
   margin-right: 16px;
 }
 @media screen and (max-width: 500px) {
-  
+  header {
+    padding-left: 16px;
+    /* width: 100%; */
+  }
+  nav {
+    padding-right: 16px;
+    margin-bottom: 32px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav .icon-menu {
+    display: block;
+  }
+  .hero,
+  .services,
+  .benefit .wrapper-card {
+    flex-direction: column;
+  }
+  .hero .hero-img img,
+  .services {
+    width: 100%;
+  }
 }
