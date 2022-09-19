@@ -45,6 +45,9 @@ nav ul li:last-child a:hover {
 nav .icon-menu {
   display: none;
 }
+nav .Logo {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 .hero {
   display: flex;
   padding-top: 36px;
@@ -72,16 +75,6 @@ nav .icon-menu {
   line-height: 20px;
   margin-right: 128px;
 }
-/* .hero .hero-text button {
-  width: 140px;
-  height: 36px;
-  background: #5cb85f;
-  border-radius: 2px;
-  color: #ffffff;
-  border: 0;
-  font-size: 14px;
-  font-weight: 700;
-} */
 .hero .hero-text a {
   width: fit-content;
   height: fit-content;
@@ -102,7 +95,6 @@ nav .icon-menu {
   display: flex;
 }
 .services .services-img {
-  /* margin: auto; */
   margin-left: 206px;
   margin-right: 100px;
 }
@@ -341,7 +333,8 @@ nav .icon-menu {
     /* width: 100%; */
   }
   nav {
-    padding-right: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
     margin-bottom: 32px;
   }
   nav ul {
@@ -356,7 +349,80 @@ nav .icon-menu {
     flex-direction: column;
   }
   .hero .hero-img img,
-  .services {
+  .services,
+  .services .services-img img {
     width: 100%;
+  }
+  .hero .hero-text {
+    margin: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .services .services-img {
+    margin: auto;
+    margin-left: 54px;
+    margin-right: 54px;
+  }
+  .services .services-text {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .benefit {
+    padding: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .benefit > h1,
+  .benefit > p {
+    text-align: center;
+  }
+  .benefit .wrapper-card {
+    gap: 16px;
+    flex-direction: column;
+  }
+  .benefit .wrapper-card .card {
+    width: fit-content;
+    /* flex-direction: column; */
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .testimony .wrapper-slide {
+    gap: 24px;
+    margin-left: 0;
+  }
+  .testimony .wrapper-slide .slide {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  /* .testimony .wrapper-slide .slide .slide-text {
+    justify-items: center;
+    align-items: center;
+  } */
+  .testimony .slide .wrap-stars {
+    margin-left: 90px;
+  }
+  .testimony .slide:not(:last-child) {
+    display: none;
+  }
+  .banner {
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .faq {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 0;
+  }
+  .faq .faq-list .faq-element {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+    margin-left: 16px;
   }
 }
